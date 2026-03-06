@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Squash Warm-Up Mistakes That Cause Injury — Dr. Aidan Kaye</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Tenor+Sans&family=DM+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:       #080808;
+  --black-2:     #0f0f0f;
+  --black-3:     #141414;
+  --black-4:     #1a1a1a;
+  --gold:        #B8953F;
+  --gold-light:  #D4AF6A;
+  --gold-pale:   #E8D5A3;
+  --gold-dim:    #7A6228;
+  --gold-glow:   rgba(184,149,63,0.12);
+  --white:       #F0EDE8;
+  --white-2:     #C8C3BA;
+  --white-3:     #8A8680;
+  --border:      rgba(184,149,63,0.18);
+  --border-soft: rgba(184,149,63,0.08);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:0.35;}
+::-webkit-scrollbar{width:2px;}::-webkit-scrollbar-track{background:var(--black);}::-webkit-scrollbar-thumb{background:var(--gold-dim);}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:32px 72px;display:flex;align-items:center;justify-content:space-between;transition:padding 0.4s,background 0.4s;}
+nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px solid var(--border-soft);backdrop-filter:blur(12px);}
+.nav-logo{display:flex;flex-direction:column;text-decoration:none;}
+.nav-logo-name{font-family:'Cormorant',serif;font-size:1rem;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--white);line-height:1;}
+.nav-logo-sub{font-size:0.5rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
+
+/* ARTICLE */
+.article-header{padding:140px 72px 80px;max-width:900px;margin:0 auto;}
+.article-label{font-size:0.5rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+.article-label::before{content:'';width:28px;height:1px;background:var(--gold);}
+.article-title{font-family:'Cormorant',serif;font-size:clamp(2.4rem,5vw,3.5rem);font-weight:300;line-height:1.15;letter-spacing:-0.01em;margin-bottom:24px;}
+.article-meta{font-size:0.7rem;color:var(--white-3);letter-spacing:0.08em;margin-bottom:8px;}
+.article-read-time{font-size:0.65rem;color:var(--gold-dim);}
+
+.article-content{padding:0 72px 120px;max-width:900px;margin:0 auto;}
+.article-content p{font-size:0.9rem;line-height:2;color:var(--white-2);margin-bottom:20px;}
+.article-content h2{font-family:'Cormorant',serif;font-size:1.8rem;font-weight:400;margin:50px 0 20px;color:var(--white);line-height:1.2;}
+.article-content h3{font-family:'Tenor Sans',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.1em;margin:30px 0 15px;color:var(--white);text-transform:uppercase;}
+.article-content ul{margin-left:20px;margin-bottom:20px;}
+.article-content li{font-size:0.9rem;line-height:1.9;color:var(--white-2);margin-bottom:10px;list-style:disc;}
+.article-content strong{color:var(--gold-light);font-weight:500;}
+.article-content em{color:var(--gold-light);font-style:italic;}
+.article-content a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);transition:color 0.3s;}
+.article-content a:hover{color:var(--gold-light);}
+
+.bio-section{background:var(--black-3);border:1px solid var(--border-soft);padding:40px;margin-top:80px;border-radius:0;}
+.bio-title{font-family:'Tenor Sans',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.bio-text{font-size:0.85rem;line-height:1.9;color:var(--white-2);}
+
+footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between;background:var(--black-2);}
+.footer-logo{font-family:'Cormorant',serif;font-size:0.9rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);}
+.footer-copy{font-size:0.5rem;letter-spacing:0.1em;color:var(--white-3);}
+.footer-links{display:flex;gap:28px;}
+.footer-links a{font-size:0.5rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-3);text-decoration:none;transition:color 0.3s;}
+.footer-links a:hover{color:var(--gold);}
+
+@media(max-width:960px){
+  nav{padding:22px 24px;}
+  nav.scrolled{padding:16px 24px;}
+  .article-header{padding:100px 24px 60px;}
+  .article-content{padding:0 24px 80px;}
+  .article-title{font-size:clamp(1.8rem,6vw,2.5rem);}
+  footer{flex-direction:column;gap:14px;text-align:center;padding:32px 24px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="../index.html" class="nav-logo">
+    <span class="nav-logo-name">Dr. Aidan Kaye</span>
+    <span class="nav-logo-sub">The Compound Method</span>
+  </a>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<div class="article-header">
+  <div class="article-label">Biomechanics · Warm-Up Science</div>
+  <h1 class="article-title">5 Squash Warm-Up Mistakes That Cause Injury</h1>
+  <div class="article-meta">March 2026</div>
+  <div class="article-read-time">8 min read</div>
+</div>
+
+<!-- ARTICLE CONTENT -->
+<article class="article-content">
+  <p>I've treated hundreds of squash players over the past decade—from recreational weekend warriors to competitive athletes vying for national rankings. If there's one pattern I've noticed, it's this: most injuries don't happen during a match. They happen during warm-up.</p>
+
+  <p>The warm-up is where your body prepares for explosive movement, rapid deceleration, and lateral loading. When it's done wrong, you're basically lighting a fuse for injury. Here are the five mistakes I see most often—and exactly what to do instead.</p>
+
+  <h2>Mistake #1: Static Stretching Before Intensity</h2>
+
+  <p><strong>The problem:</strong> Static stretching before high-intensity activity reduces your nervous system's ability to generate force. You're essentially telling your muscles to relax right before you need them to fire hard.</p>
+
+  <p><strong>What to do instead:</strong></p>
+  <ul>
+    <li>Perform 5-10 leg swings per leg (forward/back, side-to-side) — primes hip flexors and extensors</li>
+    <li>10-15 bodyweight squats at moderate pace — activates quads, glutes, core</li>
+    <li>10 walking lunges — engages hip flexors and extensors dynamically</li>
+    <li>8-10 arm circles (forward and backward) — prepares shoulder girdle for explosive rotation</li>
+    <li>30 seconds of light jogging or bouncing — elevates heart rate without fatigue</li>
+  </ul>
+
+  <p>Dynamic warm-ups trigger <strong>post-activation potentiation (PAP)</strong>—your nervous system becomes primed to generate more force after activation, so you'll actually perform <em>better</em> after proper dynamic prep than if you skipped it.</p>
+
+  <p><strong>Save static stretching for after your match</strong> when you're cooling down and actually want to improve flexibility.</p>
+
+  <h2>Mistake #2: Not Warming Up Your Rotational System</h2>
+
+  <p><strong>The problem:</strong> Squash is a game of rotation. Your body rotates to generate power, reach shots near walls, and create stability when moving laterally. Without rotational activation, your body compensates—lower back takes stress, shoulder becomes unstable, knees collapse inward.</p>
+
+  <p><strong>What to do instead:</strong></p>
+  <ul>
+    <li><strong>World Rotations</strong> (standing, feet shoulder-width apart): 8-10 rotations each direction, gradually increasing range of motion — activates core stabilizers and thoracic spine. <a href="https://www.youtube.com/results?search_query=world+rotations+exercise">Watch: World Rotations</a></li>
+    <li><strong>Cat-Cow Stretch</strong> (quadruped position): 8-10 slow cycles, emphasizing spinal extension and flexion — primes thoracic mobility. <a href="https://www.youtube.com/results?search_query=cat+cow+stretch+thoracic">Watch: Cat-Cow Stretch</a></li>
+    <li><strong>Quadruped Hip Rotations</strong> (hands and knees): 8 rotations each side, moving knee in wide arc — opens hip external rotators. <a href="https://www.youtube.com/results?search_query=quadruped+hip+rotations">Watch: Quadruped Hip Rotations</a></li>
+    <li><strong>Lunge Twist</strong> (forward lunge position, rotate torso to inside leg): 8 per side — combines hip opening with core rotation. <a href="https://www.youtube.com/results?search_query=lunge+twist+exercise">Watch: Lunge Twist</a></li>
+    <li><strong>Open-Book Stretch</strong> (side-lying, rotate upper body): 8-10 per side — opens chest and mobilizes thoracic spine</li>
+  </ul>
+
+  <p>Time: 90 seconds total. This fundamentally changes how your body is prepared for rotational demands.</p>
+
+  <h2>Mistake #3: Ignoring Your Feet and Ankles</h2>
+
+  <p><strong>The problem:</strong> Your feet are your foundation. Yet most warm-ups completely ignore feet and ankles. Result: ankles aren't ready for rapid direction changes, you plant sub-optimally, your ankle inverts, you create microtears in lateral ligaments. Or your arch flattens on landing, your knee collapses inward, and you've created knee pain that lingers for weeks.</p>
+
+  <p><strong>What to do instead — Controlled Articular Rotations (CARs):</strong></p>
+
+  <p>CARs are a neuromuscular priming technique that teaches your nervous system to control movement through your ankle's full range of motion. They activate intrinsic foot muscles, improve proprioception, and create stability before explosive movement.</p>
+
+  <p><strong>Why CARs work:</strong> Your nervous system maps movement potential. CARs essentially tell your brain "here's the full range of motion available at this joint, and here's how to control it." This neural priming creates end-range stability—which is exactly what you need when you plant and pivot in squash.</p>
+
+  <p><strong>How to perform ankle CARs:</strong></p>
+  <ol>
+    <li>Stand on one leg, knee slightly bent</li>
+    <li>Lift your other foot slightly off the ground</li>
+    <li>Draw the largest circle possible with your ankle, moving through all planes of motion (forward, side, back, side) — 8-10 circles</li>
+    <li>Move slowly and deliberately, trying to maintain control throughout</li>
+    <li>Reverse direction — 8-10 circles the opposite way</li>
+    <li>Repeat on other ankle</li>
+  </ol>
+
+  <p><a href="https://www.youtube.com/results?search_query=controlled+articular+rotations+ankle+CAR">Watch: Ankle CARs Demonstration</a></p>
+
+  <p><strong>Additional ankle activation:</strong></p>
+  <ul>
+    <li>30 seconds single-leg balance (eyes open) per side — engages proprioceptors</li>
+    <li>10 lateral shuffles each direction — activates foot intrinsics and proprioception</li>
+  </ul>
+
+  <p>Time: 2-3 minutes. This is non-negotiable if you want ankle stability in squash.</p>
+
+  <h2>Mistake #4: Starting Intense Too Quickly</h2>
+
+  <p><strong>The problem:</strong> You arrive at the court, jog around, do a few practice swings, then immediately hit hard rallies. Your cardiovascular system, musculoskeletal system, and nervous system need a progression to high intensity—typically 10-15 minutes.</p>
+
+  <p><strong>What to do instead — The Progression:</strong></p>
+
+  <h3>Phase 1: Gentle Movement & Mobility (2-3 minutes)</h3>
+  <ul>
+    <li>Light jogging around perimeter</li>
+    <li>Dynamic stretches (leg swings, arm circles)</li>
+    <li>Joint rotations (ankles, hips, shoulders)</li>
+  </ul>
+
+  <h3>Phase 2: Dynamic Activation (3-4 minutes)</h3>
+  <ul>
+    <li>Bodyweight squats (15 reps)</li>
+    <li>Walking lunges (10 per side)</li>
+    <li>World rotations and rotational stretches</li>
+    <li>Ankle CARs and ankle mobility work</li>
+    <li>Glute bridges (15 reps) — critical for squash stability. <a href="https://www.youtube.com/results?search_query=glute+bridge+exercise">Watch: Glute Bridges</a></li>
+  </ul>
+
+  <h3>Phase 3: Light Technical Work (3-4 minutes)</h3>
+  <ul>
+    <li>Easy practice swings (forehand and backhand) — 10-15 total</li>
+    <li>Slow footwork drills (small circles, lunges with control)</li>
+    <li>Movement at 50% intensity</li>
+  </ul>
+
+  <h3>Phase 4: Progressive Intensity (5-7 minutes)</h3>
+  <ul>
+    <li>Gradually increase speed of footwork</li>
+    <li>Gradually increase pace of ball striking</li>
+    <li>Build to match intensity over several minutes, not all at once</li>
+  </ul>
+
+  <p>This progression takes 13-18 minutes total. It's the difference between playing pain-free and dealing with injuries.</p>
+
+  <h2>Mistake #5: Not Addressing Your Individual Neuromuscular Activation Needs</h2>
+
+  <p><strong>The problem:</strong> This is the most critical mistake. Every body is different. A generic warm-up doesn't account for your unique movement patterns, history, and weaknesses.</p>
+
+  <p>If you have a history of ankle inversion injuries, you need different ankle activation than someone with pristine ankles. If you have tight hip flexors (desk worker), your hip needs different prep than an athlete with natural mobility. If you've had shoulder issues, your shoulder girdle needs specific stability work before explosive rotation.</p>
+
+  <p>Most players do the same generic warm-up every time, never addressing their specific neuromuscular needs. This is why some players get repeatedly injured while others stay healthy despite identical training loads.</p>
+
+  <p><strong>What to do instead — Clinical Movement Assessment:</strong></p>
+
+  <h3>1. Identify Your Weak Links</h3>
+  <ul>
+    <li>Do you have a history of ankle injuries? → Priority: ankle stability and proprioception</li>
+    <li>Do you sit all day? → Priority: hip flexor length and hip external rotation</li>
+    <li>Do you have shoulder pain or tightness? → Priority: thoracic mobility and shoulder external rotation</li>
+    <li>Do you have knee pain? → Priority: glute activation and hip stability</li>
+    <li>Do you have lower back pain? → Priority: core stability and hip stability</li>
+  </ul>
+
+  <h3>2. Build Your Personal Activation Protocol</h3>
+
+  <p>Once you've identified your weak links, add specific activation work targeting those areas.</p>
+
+  <p><strong>Example 1: Chronic Ankle Instability</strong></p>
+  <ul>
+    <li>3-4 minutes: Ankle CARs (both ankles)</li>
+    <li>2 minutes: Single-leg balance work</li>
+    <li>Total add-on: 5-6 minutes</li>
+  </ul>
+
+  <p><strong>Example 2: Tight Hip Flexors (Desk Worker)</strong></p>
+  <ul>
+    <li>2 minutes: 90/90 Hip Stretch (2 sides). <a href="https://www.youtube.com/results?search_query=90+90+hip+stretch">Watch: 90/90 Hip Stretch</a> — opens hip flexors and external rotators</li>
+    <li>2 minutes: Glute activation (bridges, clamshells)</li>
+    <li>Total add-on: 4-5 minutes</li>
+  </ul>
+
+  <p><strong>Example 3: Shoulder Mobility Restrictions</strong></p>
+  <ul>
+    <li>2 minutes: Thoracic rotations (world rotations + open-book stretches)</li>
+    <li>2 minutes: Shoulder external rotation work (band pull-aparts, arm bars). <a href="https://www.youtube.com/results?search_query=band+pull+aparts+shoulder">Watch: Band Pull-Aparts</a></li>
+    <li>Total add-on: 4-5 minutes</li>
+  </ul>
+
+  <p><strong>Example 4: Chronic Knee Pain</strong></p>
+  <ul>
+    <li>2 minutes: Glute activation (glute bridges, single-leg bridges)</li>
+    <li>2 minutes: Hip stability (clamshells, lateral band walks). <a href="https://www.youtube.com/results?search_query=lateral+band+walk+glutes">Watch: Lateral Band Walk</a></li>
+    <li>Total add-on: 4-5 minutes</li>
+  </ul>
+
+  <p><strong>3. The Key: Neuromuscular Specificity</strong></p>
+
+  <p>You're not just stretching—you're activating specific muscles your nervous system will need for the demands you're about to face. This is why the warm-up is personalized. A player with pristine ankles spending 6 minutes on ankle work is wasting time. A player with chronic ankle issues spending zero time on ankle work is asking for injury.</p>
+
+  <p><strong>4. How to Identify Your Specific Needs</strong></p>
+
+  <p>Get a movement assessment from a sports medicine provider or physical therapist. They should identify:</p>
+  <ul>
+    <li>Your movement asymmetries (does one ankle collapse inward more than the other?)</li>
+    <li>Your strength imbalances (which leg is weaker? Which glute is underactive?)</li>
+    <li>Your mobility restrictions (where is your movement limited?)</li>
+    <li>Your past injury history (what's prone to re-injury?)</li>
+  </ul>
+
+  <p>Once you know these, your warm-up becomes targeted and effective instead of generic and mediocre.</p>
+
+  <p><strong>Bottom line:</strong> Your warm-up should be about <em>you</em>, not about what someone else does. Spend extra time on your weak links. Spend less time on areas where you're naturally strong. This is how elite athletes prepare—they know their body's specific demands and address them directly.</p>
+
+  <h2>The Bottom Line</h2>
+
+  <p>Your warm-up is an investment in your health and your performance. A proper 15-20 minute warm-up doesn't cost you anything except time—and yet it can be the difference between playing pain-free for years and dealing with nagging injuries.</p>
+
+  <p>The best players I've worked with—the ones at the national level, the ones playing into their 40s and 50s without injury—they all have this in common: they treat their warm-up with the same seriousness they treat their match.</p>
+
+  <p>Your body will thank you.</p>
+
+  <!-- BIO -->
+  <div class="bio-section">
+    <div class="bio-title">About the Author</div>
+    <div class="bio-text">Dr. Aidan Kaye is a licensed chiropractor, acupuncturist, and certified sports practitioner based in Bryn Mawr, PA. He formerly served as Official Sports Medicine Doctor for Team USA Squash for 2.5 years and specializes in athlete performance and injury prevention.</div>
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Dr. Aidan Kaye, DC, L.Ac., CCSP</div>
+  <div class="footer-copy">© 2026 · Dr. Aidan Kaye · The Compound Method · All Rights Reserved</div>
+  <div class="footer-links">
+    <a href="../index.html#method">The Method</a>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#booking">Apply</a>
+    <a href="index.html">Insights</a>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+</script>
+</body>
+</html>
