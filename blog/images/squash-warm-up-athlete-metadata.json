@@ -1,0 +1,38 @@
+{
+  "topic": "squash warm up athlete",
+  "timestamp": "2026-03-07T03:48:08.434Z",
+  "images": [
+    {
+      "filename": "squash-warm-up-athlete-1.jpg",
+      "filepath": "blog/images/squash-warm-up-athlete-1.jpg",
+      "url": "https://images.unsplash.com/photo-1634225309345-b6b49528bcf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODkzNTZ8MHwxfHNlYXJjaHwxfHxzcXVhc2glMjB3YXJtJTIwdXAlMjBhdGhsZXRlfGVufDB8fHx8MTc3Mjg1NTI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "credit": "Edoardo Cuoghi",
+      "creditUrl": "https://unsplash.com/@edoardo_cuoghi_98",
+      "alt": "a shirtless man holding a white object in his hand"
+    },
+    {
+      "filename": "squash-warm-up-athlete-2.jpg",
+      "filepath": "blog/images/squash-warm-up-athlete-2.jpg",
+      "url": "https://images.unsplash.com/photo-1675910518330-1843b4d03de1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODkzNTZ8MHwxfHNlYXJjaHwyfHxzcXVhc2glMjB3YXJtJTIwdXAlMjBhdGhsZXRlfGVufDB8fHx8MTc3Mjg1NTI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "credit": "Jonathan Borba",
+      "creditUrl": "https://unsplash.com/@jonathanborba",
+      "alt": "a woman in a sports bra top and shorts"
+    },
+    {
+      "filename": "squash-warm-up-athlete-3.jpg",
+      "filepath": "blog/images/squash-warm-up-athlete-3.jpg",
+      "url": "https://images.unsplash.com/photo-1758521959402-61177dcc4e37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODkzNTZ8MHwxfHNlYXJjaHwzfHxzcXVhc2glMjB3YXJtJTIwdXAlMjBhdGhsZXRlfGVufDB8fHx8MTc3Mjg1NTI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "credit": "Vitaly Gariev",
+      "creditUrl": "https://unsplash.com/@silverkblack",
+      "alt": "Man exercising on outdoor gym equipment"
+    },
+    {
+      "filename": "squash-warm-up-athlete-4.jpg",
+      "filepath": "blog/images/squash-warm-up-athlete-4.jpg",
+      "url": "https://images.unsplash.com/photo-1711476926783-94176510b0ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODkzNTZ8MHwxfHNlYXJjaHw0fHxzcXVhc2glMjB3YXJtJTIwdXAlMjBhdGhsZXRlfGVufDB8fHx8MTc3Mjg1NTI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "credit": "LOGAN WEAVER | @LGNWVR",
+      "creditUrl": "https://unsplash.com/@lgnwvr",
+      "alt": "a man with no shirt is standing in a parking lot"
+    }
+  ]
+}
