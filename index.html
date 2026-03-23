@@ -187,6 +187,10 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .fsub{width:100%;padding:18px;background:var(--gold);border:none;color:var(--black);font-family:'DM Sans',sans-serif;font-size:0.55rem;font-weight:400;letter-spacing:0.3em;text-transform:uppercase;cursor:none;transition:background 0.3s;margin-top:8px;}
 .fsub:hover{background:var(--gold-light);}
 .form-privacy{font-size:0.5rem;color:var(--white-3);text-align:center;margin-top:14px;}
+.bot-field-wrap{display:none;}
+.intake-success-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:280px;padding:40px;text-align:center;}
+.intake-success-mark{font-size:1.8rem;color:var(--gold);margin-bottom:28px;letter-spacing:0.1em;}
+.intake-success-msg{font-family:'Cormorant',serif;font-size:1.25rem;font-weight:400;color:var(--white);line-height:1.8;max-width:380px;}
 
 /* TESTIMONIALS */
 #testimonials{background:var(--black-2);}
@@ -652,31 +656,43 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
         </div>
       </div>
     </div>
-    <div class="apply-form reveal d1">
-      <div class="form-head">
-        <div class="form-head-title">Request an Introduction</div>
-        <p class="form-head-sub">Tell me about yourself and what you're looking to address. This is not a booking form — it's the beginning of a conversation.</p>
+    <div class="apply-form reveal d1" id="applyFormWrap">
+      <div id="intakeForm">
+        <div class="form-head">
+          <div class="form-head-title">Request an Introduction</div>
+          <p class="form-head-sub">Tell me about yourself and what you're looking to address. This is not a booking form — it's the beginning of a conversation.</p>
+        </div>
+        <form name="intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="intakeFormEl">
+          <input type="hidden" name="form-name" value="intake">
+          <p class="bot-field-wrap"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <div class="frow frow-2">
+            <div><label class="flabel">First Name</label><input type="text" name="first-name" class="fi" placeholder="First" required></div>
+            <div><label class="flabel">Last Name</label><input type="text" name="last-name" class="fi" placeholder="Last" required></div>
+          </div>
+          <div class="frow"><label class="flabel">Email Address</label><input type="email" name="email" class="fi" placeholder="your@email.com" required></div>
+          <div class="frow">
+            <label class="flabel">How did you hear about this practice?</label>
+            <select name="heard-from" class="fs" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Referred by a current client</option>
+              <option>Referred by a coach or trainer</option>
+              <option>Squash community</option>
+              <option>Medical professional referral</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="frow"><label class="flabel">Your Sport or Background</label><input type="text" name="sport-background" class="fi" placeholder="e.g. Squash, Executive, Collegiate Tennis…"></div>
+          <div class="frow"><label class="flabel">What are you looking to address?</label><textarea name="what-to-address" class="ft" placeholder="Describe your goals, current challenges, or what brought you here…" required></textarea></div>
+          <button type="submit" class="fsub" id="intakeSubmit">Submit Introduction</button>
+          <p class="form-privacy">All information is kept strictly confidential and reviewed personally.</p>
+        </form>
       </div>
-      <div class="frow frow-2">
-        <div><label class="flabel">First Name</label><input type="text" class="fi" placeholder="First"></div>
-        <div><label class="flabel">Last Name</label><input type="text" class="fi" placeholder="Last"></div>
+      <div id="intakeSuccess" style="display:none;">
+        <div class="intake-success-inner">
+          <div class="intake-success-mark">✦</div>
+          <p class="intake-success-msg">Your introduction has been received. If there's a fit, you'll hear from Dr. Kaye directly within 48 hours.</p>
+        </div>
       </div>
-      <div class="frow"><label class="flabel">Email Address</label><input type="email" class="fi" placeholder="your@email.com"></div>
-      <div class="frow">
-        <label class="flabel">How did you hear about this practice?</label>
-        <select class="fs">
-          <option value="" disabled selected>Select one</option>
-          <option>Referred by a current client</option>
-          <option>Referred by a coach or trainer</option>
-          <option>Squash community</option>
-          <option>Medical professional referral</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="frow"><label class="flabel">Your Sport or Background</label><input type="text" class="fi" placeholder="e.g. Squash, Executive, Collegiate Tennis…"></div>
-      <div class="frow"><label class="flabel">What are you looking to address?</label><textarea class="ft" placeholder="Describe your goals, current challenges, or what brought you here…"></textarea></div>
-      <button class="fsub">Submit Introduction</button>
-      <p class="form-privacy">All information is kept strictly confidential and reviewed personally.</p>
     </div>
   </div>
 </section>
@@ -884,6 +900,32 @@ if(hamburger&&mobileMenu){
       hamburger.classList.remove('open');
       mobileMenu.classList.remove('open');
       document.body.style.overflow='';
+    });
+  });
+}
+// Intake form — Netlify Forms + inline success state
+const intakeFormEl = document.getElementById('intakeFormEl');
+if (intakeFormEl) {
+  intakeFormEl.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = document.getElementById('intakeSubmit');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    const data = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    })
+    .then(function() {
+      document.getElementById('intakeForm').style.display = 'none';
+      document.getElementById('intakeSuccess').style.display = 'block';
+    })
+    .catch(function() {
+      btn.disabled = false;
+      btn.textContent = 'Submit Introduction';
+      alert('Something went wrong. Please try again or email directly.');
     });
   });
 }
