@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Insights — Dr. Aidan Kaye · The Compound Method</title>
+    <link>https://aidankaye.com/blog/</link>
+    <description>Clinical perspectives on movement, performance, and the mechanics of a body built to last.</description>
+    <language>en-us</language>
+    <managingEditor>aidan@aidankaye.com (Dr. Aidan Kaye)</managingEditor>
+    <atom:link href="https://aidankaye.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>5 Squash Warm-Up Mistakes That Cause Injury</title>
+      <link>https://aidankaye.com/blog/squash-warm-up-mistakes.html</link>
+      <description>Most squash injuries don't happen during a match — they happen during warm-up. Here are the five most common pre-match mistakes and what to do instead.</description>
+      <author>Dr. Aidan Kaye</author>
+      <pubDate>Mon, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://aidankaye.com/blog/squash-warm-up-mistakes.html</guid>
+      <category>Biomechanics</category>
+      <category>Injury Prevention</category>
+    </item>
+
+  </channel>
+</rss>

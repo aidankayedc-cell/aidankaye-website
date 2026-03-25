@@ -3,9 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insights — Dr. Aidan Kaye, DC, L.Ac., CCSP</title>
+<title>Insights — Dr. Aidan Kaye · The Compound Method</title>
+<meta name="description" content="Clinical insights on biomechanics, injury recovery, performance, and longevity from Dr. Aidan Kaye, DC, L.Ac., CCSP — former Team USA Squash provider.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Insights — Dr. Aidan Kaye · The Compound Method">
+<meta property="og:description" content="Clinical perspectives on movement, recovery, and performance from The Compound Method.">
+<meta property="og:url" content="https://aidankaye.com/blog/">
+<meta property="og:site_name" content="Dr. Aidan Kaye · The Compound Method">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://aidankaye.com/blog/">
+<link rel="alternate" type="application/rss+xml" title="Insights — Dr. Aidan Kaye" href="/blog/feed.xml">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Tenor+Sans&family=DM+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+<!-- Schema: Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Insights — The Compound Method",
+  "url": "https://aidankaye.com/blog/",
+  "description": "Clinical insights on biomechanics, injury recovery, performance, and longevity.",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Aidan Kaye",
+    "jobTitle": "Doctor of Chiropractic, Licensed Acupuncturist, Certified Chiropractic Sports Practitioner",
+    "url": "https://aidankaye.com"
+  }
+}
+</script>
+
 <style>
 :root {
   --black:       #080808;
@@ -35,36 +68,47 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .nav-logo{display:flex;flex-direction:column;text-decoration:none;}
 .nav-logo-name{font-family:'Cormorant',serif;font-size:1rem;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--white);line-height:1;}
 .nav-logo-sub{font-size:0.5rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
-.nav-center{display:flex;gap:44px;position:absolute;left:50%;transform:translateX(-50%);}
-.nav-center a{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-3);text-decoration:none;transition:color 0.3s;position:relative;padding-bottom:2px;}
-.nav-center a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s;}
-.nav-center a:hover{color:var(--gold-light);}
-.nav-center a:hover::after{width:100%;}
-.nav-apply{font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--border);padding:10px 24px;transition:background 0.3s,color 0.3s;}
-.nav-apply:hover{background:var(--gold);color:var(--black);}
+.nav-center{display:flex;gap:44px;}
+.nav-center a{font-size:0.52rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--white-3);text-decoration:none;transition:color 0.3s;}
+.nav-center a:hover,.nav-center a.active{color:var(--white);}
+.nav-apply{font-size:0.48rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border);padding:10px 20px;text-decoration:none;transition:all 0.3s;}
+.nav-apply:hover{background:var(--gold-glow);}
 
-.section-wrap{padding:120px 72px;}
-.section-label{font-size:0.5rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+/* MOBILE NAV */
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:var(--white);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--black);z-index:490;flex-direction:column;align-items:center;justify-content:center;gap:36px;}
+.mobile-menu.open{display:flex;}
+.mobile-nav-link{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--white-2);text-decoration:none;}
+.mobile-cta{color:var(--gold) !important;}
+
+/* PAGE HEADER */
+.blog-hero{padding:160px 72px 80px;max-width:1200px;margin:0 auto;}
+.section-label{font-size:0.48rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:24px;}
 .section-label::before{content:'';width:28px;height:1px;background:var(--gold);}
-.section-title{font-family:'Cormorant',serif;font-size:clamp(2.4rem,4.5vw,4.2rem);font-weight:300;line-height:1.05;letter-spacing:-0.01em;}
-.section-title em{font-style:italic;color:var(--gold-light);}
+.blog-hero-title{font-family:'Cormorant',serif;font-size:clamp(2.8rem,5vw,4rem);font-weight:300;line-height:1.1;letter-spacing:-0.01em;margin-bottom:20px;}
+.blog-hero-sub{font-size:0.78rem;line-height:1.9;color:var(--white-3);max-width:520px;}
 
-.blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:56px;}
-.blog-grid-full{display:grid;grid-template-columns:1fr;gap:2px;margin-top:56px;}
-.bcard{background:var(--black-3);border:1px solid transparent;overflow:hidden;transition:border-color 0.3s;cursor:pointer;text-decoration:none;color:inherit;display:block;}
-.bcard:hover{border-color:var(--border);}
-.bcard-img{width:100%;aspect-ratio:16/9;background:var(--black-4);display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative;overflow:hidden;}
-.bcard-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,149,63,0.06) 0%,transparent 60%);}
-.bcard.featured .bcard-img{aspect-ratio:4/3;font-size:3rem;}
-.bcard-body{padding:28px;}
-.bcard-cat{font-size:0.48rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
-.bcard-title{font-family:'Cormorant',serif;font-size:1.2rem;font-weight:400;line-height:1.3;color:var(--white);margin-bottom:12px;}
-.bcard.small .bcard-title{font-size:1rem;}
-.bcard-meta{font-size:0.52rem;color:var(--white-3);letter-spacing:0.08em;}
-.bcard-excerpt{font-size:0.75rem;line-height:1.8;color:var(--white-3);margin-top:10px;}
+/* FILTER */
+.blog-filter{padding:0 72px 56px;max-width:1200px;margin:0 auto;display:flex;gap:20px;flex-wrap:wrap;}
+.filter-btn{font-size:0.45rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--white-3);border:1px solid var(--border-soft);padding:8px 18px;background:none;cursor:pointer;transition:all 0.3s;}
+.filter-btn:hover,.filter-btn.active{color:var(--gold);border-color:var(--border);}
 
-.gold-rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.2;}
+/* GRID */
+.blog-grid{padding:0 72px 140px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
 
+/* CARD */
+.bcard{background:var(--black-3);border:1px solid var(--border-soft);padding:36px;display:flex;flex-direction:column;text-decoration:none;transition:border-color 0.3s,transform 0.3s;}
+.bcard:hover{border-color:var(--border);transform:translateY(-4px);}
+.bcard-cat{font-size:0.42rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.bcard-title{font-family:'Cormorant',serif;font-size:1.35rem;font-weight:400;line-height:1.3;color:var(--white);margin-bottom:14px;}
+.bcard-excerpt{font-size:0.7rem;line-height:1.85;color:var(--white-3);flex:1;margin-bottom:24px;}
+.bcard-meta{font-size:0.52rem;letter-spacing:0.08em;color:var(--white-3);display:flex;gap:14px;align-items:center;}
+.bcard-meta span{color:var(--gold-dim);}
+.bcard-read{display:flex;align-items:center;gap:8px;font-size:0.45rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-top:20px;padding-top:20px;border-top:1px solid var(--border-soft);}
+.bcard-read::after{content:'→';}
+
+/* FOOTER */
 footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between;background:var(--black-2);}
 .footer-logo{font-family:'Cormorant',serif;font-size:0.9rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);}
 .footer-copy{font-size:0.5rem;letter-spacing:0.1em;color:var(--white-3);}
@@ -72,20 +116,28 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
 .footer-links a{font-size:0.5rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-3);text-decoration:none;transition:color 0.3s;}
 .footer-links a:hover{color:var(--gold);}
 
-@media(max-width:960px){
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.js-ready .reveal.up{opacity:1;transform:none;}
+.d1{transition-delay:0.1s;}.d2{transition-delay:0.18s;}.d3{transition-delay:0.26s;}
+
+@media(max-width:1100px){
+  .blog-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:768px){
   nav{padding:22px 24px;}
   nav.scrolled{padding:16px 24px;}
-  .nav-center{display:none;}
-  .nav-apply{display:none;}
-  .section-wrap{padding:72px 24px;}
-  .blog-grid{grid-template-columns:1fr;}
+  .nav-center,.nav-apply{display:none;}
+  .nav-hamburger{display:flex;}
+  .blog-hero,.blog-filter{padding-left:24px;padding-right:24px;}
+  .blog-grid{grid-template-columns:1fr;padding:0 24px 80px;}
+  .blog-hero{padding-top:110px;}
   footer{flex-direction:column;gap:14px;text-align:center;padding:32px 24px;}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="nav">
   <a href="../index.html" class="nav-logo">
     <span class="nav-logo-name">Dr. Aidan Kaye</span>
@@ -96,72 +148,104 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
     <a href="../index.html#about">About</a>
     <a href="../index.html#services">Services</a>
     <a href="../index.html#testimonials">Testimonials</a>
-    <a href="index.html">Insights</a>
+    <a href="/blog/" class="active">Insights</a>
+    <a href="../index.html#location">Location</a>
   </div>
   <a href="../index.html#booking" class="nav-apply">Apply to Work Together</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<!-- BLOG LISTING -->
-<section class="section-wrap" style="margin-top:100px;">
-  <div>
-    <div class="section-label">Insights</div>
-    <h1 class="section-title">From the <em>Practice</em></h1>
-    <p style="font-size:0.75rem;line-height:2;color:var(--white-3);margin-top:20px;max-width:600px;">Evidence-based perspectives on biomechanics, recovery, and performance longevity. Written for athletes, coaches, and anyone who demands more from their body.</p>
-  </div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#method" class="mobile-nav-link">The Method</a>
+  <a href="../index.html#about" class="mobile-nav-link">About</a>
+  <a href="../index.html#services" class="mobile-nav-link">Services</a>
+  <a href="../index.html#testimonials" class="mobile-nav-link">Testimonials</a>
+  <a href="/blog/" class="mobile-nav-link">Insights</a>
+  <a href="../index.html#location" class="mobile-nav-link">Location</a>
+  <a href="../index.html#booking" class="mobile-cta mobile-nav-link">Apply to Work Together</a>
+</div>
 
-  <div class="blog-grid-full">
-    <a href="squash-warm-up-mistakes.html" class="bcard featured">
-      <div class="bcard-img" style="background-image:url('/blog/images/squash-warm-up-athlete-1.jpg');background-size:cover;background-position:center;"></div>
-      <div class="bcard-body">
-        <div class="bcard-cat">Biomechanics · Warm-Up Science</div>
-        <h2 class="bcard-title">5 Squash Warm-Up Mistakes That Cause Injury</h2>
-        <p class="bcard-excerpt">Most injuries don't happen during play—they happen during warm-up. Here are the five most common mistakes I see, and exactly what to do instead.</p>
-        <div class="bcard-meta">March 2026 · 8 min read</div>
-      </div>
-    </a>
-  </div>
-
-  <div style="margin-top:80px;">
-    <h3 class="section-title" style="font-size:2rem;">Coming Soon</h3>
-    <div class="blog-grid" style="margin-top:32px;">
-      <div class="bcard" style="opacity:0.6;">
-        <div class="bcard-img">🧠</div>
-        <div class="bcard-body">
-          <div class="bcard-cat">Recovery</div>
-          <h3 class="bcard-title">The Mental Side of Healing</h3>
-          <div class="bcard-meta">Coming Soon</div>
-        </div>
-      </div>
-      <div class="bcard" style="opacity:0.6;">
-        <div class="bcard-img">🎯</div>
-        <div class="bcard-body">
-          <div class="bcard-cat">Acupuncture · Squash</div>
-          <h3 class="bcard-title">Neurofunctional Acupuncture and the Racquet Sport Athlete</h3>
-          <div class="bcard-meta">Coming Soon</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- PAGE HEADER -->
+<section class="blog-hero">
+  <div class="section-label reveal">Insights</div>
+  <h1 class="blog-hero-title reveal d1">From the Practice.</h1>
+  <p class="blog-hero-sub reveal d2">Clinical perspectives on movement, performance, and the mechanics of a body built to last. Written for athletes, coaches, and anyone who takes their physical capacity seriously.</p>
 </section>
 
-<div class="gold-rule" style="margin:80px 72px 0;"></div>
+<!-- ARTICLES -->
+<div class="blog-grid">
 
-<!-- FOOTER -->
+  <a href="/blog/squash-warm-up-mistakes.html" class="bcard reveal">
+    <div class="bcard-cat">⚡ Biomechanics &amp; Injury Prevention</div>
+    <h2 class="bcard-title">5 Squash Warm-Up Mistakes That Cause Injury</h2>
+    <p class="bcard-excerpt">Most squash players never warm up correctly — and they pay for it in the third game. Here are the five most common pre-match mistakes and what to do instead.</p>
+    <div class="bcard-meta">
+      <span>Dr. Aidan Kaye</span>February 2026 · 8 min read
+    </div>
+    <div class="bcard-read">Read Article</div>
+  </a>
+
+  <!-- Placeholder cards — replace with real posts -->
+  <a href="#" class="bcard reveal d1" style="pointer-events:none;opacity:0.45;">
+    <div class="bcard-cat">🧠 Recovery</div>
+    <h2 class="bcard-title">The Mental Side of Healing: Why Your Psychology Slows Your Recovery</h2>
+    <p class="bcard-excerpt">Fear of re-injury, movement avoidance, and psychological guarding are real physiological limiters. Addressing the mental side of recovery is not optional.</p>
+    <div class="bcard-meta">
+      <span>Dr. Aidan Kaye</span>January 2026 · 6 min read
+    </div>
+    <div class="bcard-read">Coming Soon</div>
+  </a>
+
+  <a href="#" class="bcard reveal d2" style="pointer-events:none;opacity:0.45;">
+    <div class="bcard-cat">🎯 Acupuncture · Squash</div>
+    <h2 class="bcard-title">Neurofunctional Acupuncture and the Racquet Sport Athlete</h2>
+    <p class="bcard-excerpt">Why precision needle therapy targeting the neuromuscular system is becoming standard practice for elite racquet sport competitors.</p>
+    <div class="bcard-meta">
+      <span>Dr. Aidan Kaye</span>January 2026 · 5 min read
+    </div>
+    <div class="bcard-read">Coming Soon</div>
+  </a>
+
+</div>
+
 <footer>
   <div class="footer-logo">Dr. Aidan Kaye, DC, L.Ac., CCSP</div>
-  <div class="footer-copy">© 2026 · Dr. Aidan Kaye · The Compound Method · All Rights Reserved</div>
+  <div class="footer-copy">© 2026 · The Compound Method · All Rights Reserved</div>
   <div class="footer-links">
+    <a href="../index.html">Home</a>
     <a href="../index.html#method">The Method</a>
-    <a href="../index.html#services">Services</a>
     <a href="../index.html#booking">Apply</a>
-    <a href="../index.html#contact">Contact</a>
   </div>
 </footer>
 
 <script>
-// Nav scroll
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+if(hamburger&&mobileMenu){
+  hamburger.addEventListener('click',()=>{
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':'';
+  });
+  document.querySelectorAll('.mobile-nav-link').forEach(link=>{
+    link.addEventListener('click',()=>{
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow='';
+    });
+  });
+}
+try{
+  document.documentElement.classList.add('js-ready');
+  const ro=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('up');ro.unobserve(e.target);}});
+  },{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+}catch(e){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('up'));}
 </script>
 </body>
 </html>
