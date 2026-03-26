@@ -40,7 +40,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .nav-logo{display:flex;flex-direction:column;text-decoration:none;}
 .nav-logo-name{font-family:'Cormorant',serif;font-size:1rem;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--white);line-height:1;}
 .nav-logo-sub{font-size:0.5rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
-.nav-center{display:flex;gap:44px;position:absolute;left:50%;transform:translateX(-50%);}
+.nav-center{display:flex;gap:44px;flex:1;justify-content:center;}
 .nav-center a{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-3);text-decoration:none;transition:color 0.3s;position:relative;padding-bottom:2px;}
 .nav-center a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s;}
 .nav-center a:hover{color:var(--gold-light);}
@@ -214,6 +214,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .bcard{background:var(--black-3);border:1px solid transparent;overflow:hidden;transition:border-color 0.3s;}
 .bcard:hover{border-color:var(--border);}
 .bcard-img{width:100%;aspect-ratio:16/9;background:var(--black-4);display:flex;align-items:center;justify-content:center;font-size:1.5rem;position:relative;overflow:hidden;}
+.bcard-accent{width:100%;height:3px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-dim) 100%);}
 .bcard-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,149,63,0.06) 0%,transparent 60%);}
 .bcard.featured .bcard-img{aspect-ratio:4/3;font-size:2.5rem;}
 .bcard-body{padding:28px;}
@@ -284,7 +285,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   .hero-title .line-indent{padding-left:28px;}
   .hero-eyebrow{font-size:0.5rem;letter-spacing:0.3em;}
   .hero-bottom{flex-direction:column;gap:36px;margin-top:44px;}
-  .hero-descriptor p{font-size:0.72rem;}
+  .hero-descriptor p{font-size:0.9rem;}
   .hero-ctas{flex-direction:column;align-items:flex-start;gap:16px;}
   .btn-gold{width:100%;text-align:center;padding:16px;}
   .hero-right-col{align-items:flex-start;flex-direction:row;flex-wrap:wrap;gap:28px;}
@@ -784,15 +785,15 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   </div>
   <div class="blog-grid">
     <a href="/blog/squash-warm-up-mistakes.html" class="bcard featured reveal" style="text-decoration:none;">
-      <div class="bcard-img">⚡</div>
+      <div class="bcard-accent"></div>
       <div class="bcard-body">
-        <div class="bcard-cat">Biomechanics · Injury Prevention</div>
+        <div class="bcard-cat">Biomechanics &amp; Injury Prevention</div>
         <h3 class="bcard-title">5 Squash Warm-Up Mistakes That Cause Injury</h3>
         <div class="bcard-meta">February 2026 · 8 min read</div>
       </div>
     </a>
     <div class="bcard small reveal d1" style="opacity:0.5;pointer-events:none;">
-      <div class="bcard-img">🧠</div>
+      <div class="bcard-accent"></div>
       <div class="bcard-body">
         <div class="bcard-cat">Recovery</div>
         <h3 class="bcard-title">The Mental Side of Healing: Why Your Psychology Slows Your Recovery</h3>
@@ -800,9 +801,9 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
       </div>
     </div>
     <div class="bcard small reveal d2" style="opacity:0.5;pointer-events:none;">
-      <div class="bcard-img">🎯</div>
+      <div class="bcard-accent"></div>
       <div class="bcard-body">
-        <div class="bcard-cat">Acupuncture · Squash</div>
+        <div class="bcard-cat">Acupuncture &amp; Squash</div>
         <h3 class="bcard-title">Neurofunctional Acupuncture and the Racquet Sport Athlete</h3>
         <div class="bcard-meta">Coming Soon</div>
       </div>
@@ -818,7 +819,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
     <div class="section-label">Contact</div>
     <h2 class="section-title">Begin the<br><em>Conversation</em></h2>
     <p class="contact-body">The most direct path to working together is through the application above. For press inquiries, speaking engagements, or organizational partnerships, reach out directly.</p>
-    <a href="https://aidankaye.com/cdn-cgi/l/email-protection#264e434a4a49665f49535448474b430845494b" class="contact-email"><span class="__cf_email__" data-cfemail="bcd4d9d0d0d3fcc5d3c9ced2ddd1d992dfd3d1">[email&#160;protected]</span></a>
+    <a href="mailto:hello@aidankaye.com" class="contact-email">hello@aidankaye.com</a>
     <div class="socials">
       <a href="index.html#" class="soc">Instagram</a>
       <a href="index.html#" class="soc">LinkedIn</a>
@@ -839,7 +840,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   </div>
 </footer>
 
-<script data-cfasync="false" src="https://aidankaye.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // Cursor
 const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
 let mx=0,my=0,rx=0,ry=0;
