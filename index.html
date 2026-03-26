@@ -26,7 +26,7 @@
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;cursor:none;}
+body{background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:400;font-size:17px;line-height:1.65;overflow-x:hidden;cursor:none;}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:0.35;}
 ::-webkit-scrollbar{width:2px;}::-webkit-scrollbar-track{background:var(--black);}::-webkit-scrollbar-thumb{background:var(--gold-dim);}
 
@@ -64,7 +64,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .hero-title .line-bold{display:block;font-weight:600;}
 .hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;margin-top:60px;opacity:0;animation:fadeUp 0.9s ease 0.9s forwards;}
 .hero-descriptor{max-width:360px;}
-.hero-descriptor p{font-size:0.75rem;line-height:2;color:var(--white-3);margin-bottom:32px;}
+.hero-descriptor p{font-size:1rem;line-height:1.7;color:var(--white-2);margin-bottom:32px;}
 .hero-ctas{display:flex;gap:16px;align-items:center;}
 .btn-gold{font-size:0.55rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--black);background:var(--gold);padding:15px 36px;text-decoration:none;transition:background 0.3s;display:inline-block;}
 .btn-gold:hover{background:var(--gold-light);}
@@ -101,12 +101,12 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 #method{background:var(--black-2);}
 .method-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:100px;align-items:start;}
 .method-left{position:sticky;top:140px;}
-.method-tagline{font-size:0.7rem;line-height:2;color:var(--white-2);margin:28px 0 20px;max-width:400px;}
+.method-tagline{font-size:1rem;line-height:1.7;color:var(--white-2);margin:28px 0 20px;max-width:400px;}
 .pillar{background:var(--black-3);border:1px solid transparent;padding:36px 40px;display:grid;grid-template-columns:48px 1fr;gap:24px;align-items:start;transition:border-color 0.4s,background 0.4s;margin-bottom:2px;}
 .pillar:hover{border-color:var(--border);background:var(--black-4);}
 .pillar-num{font-family:'Cormorant',serif;font-size:1.8rem;font-weight:300;color:var(--gold-dim);line-height:1;padding-top:4px;}
 .pillar-name{font-family:'Tenor Sans',sans-serif;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--white);margin-bottom:10px;}
-.pillar-desc{font-size:0.72rem;line-height:1.9;color:var(--white-3);}
+.pillar-desc{font-size:0.95rem;line-height:1.7;color:var(--white-2);}
 
 /* ABOUT */
 #about{background:var(--black);}
@@ -122,7 +122,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .about-badge{position:absolute;bottom:32px;right:-28px;background:var(--black-2);border:1px solid var(--border);padding:20px 24px;z-index:3;}
 .about-badge-num{font-family:'Cormorant',serif;font-size:2.2rem;font-weight:600;color:var(--gold);line-height:1;}
 .about-badge-label{font-size:0.48rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-3);margin-top:4px;}
-.about-bio p{font-size:0.8rem;line-height:2.1;color:var(--white-2);margin-bottom:18px;}
+.about-bio p{font-size:1rem;line-height:1.7;color:var(--white-2);margin-bottom:18px;}
 .team-badge{display:inline-flex;align-items:center;gap:10px;margin-top:24px;padding:14px 20px;background:var(--gold-glow);border:1px solid var(--border);}
 .team-badge span{font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-light);}
 .creds{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px;padding-top:40px;border-top:1px solid var(--border-soft);}
@@ -133,7 +133,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 /* SERVICES */
 #services{background:var(--black-2);}
 .services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;}
-.services-intro{font-size:0.75rem;line-height:2;color:var(--white-3);max-width:360px;}
+.services-intro{font-size:1rem;line-height:1.7;color:var(--white-2);max-width:360px;}
 .svc-row{background:var(--black-3);border:1px solid transparent;padding:44px 52px;display:grid;grid-template-columns:80px 1fr auto;gap:40px;align-items:center;transition:border-color 0.4s,background 0.3s;position:relative;overflow:hidden;margin-bottom:2px;}
 .svc-row::before{content:'';position:absolute;top:0;left:0;width:0;height:100%;background:var(--gold-glow);transition:width 0.5s ease;}
 .svc-row:hover{border-color:var(--border);}
@@ -143,7 +143,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .svc-num{font-family:'Cormorant',serif;font-size:3.5rem;font-weight:300;color:rgba(184,149,63,0.15);line-height:1;position:relative;z-index:1;}
 .svc-body{position:relative;z-index:1;}
 .svc-name{font-family:'Tenor Sans',sans-serif;font-size:1rem;letter-spacing:0.05em;color:var(--white);margin-bottom:10px;}
-.svc-desc{font-size:0.72rem;line-height:1.9;color:var(--white-3);max-width:600px;}
+.svc-desc{font-size:0.95rem;line-height:1.7;color:var(--white-2);max-width:600px;}
 .svc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
 .svc-tag{font-size:0.48rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);border:1px solid rgba(184,149,63,0.2);padding:4px 10px;}
 .svc-price{text-align:right;position:relative;z-index:1;flex-shrink:0;}
@@ -155,7 +155,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .concierge::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .concierge-eye{font-size:0.48rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
 .concierge-title{font-family:'Cormorant',serif;font-size:2rem;font-weight:400;margin-bottom:16px;line-height:1.1;}
-.concierge-desc{font-size:0.75rem;line-height:2;color:var(--white-2);max-width:520px;}
+.concierge-desc{font-size:1rem;line-height:1.7;color:var(--white-2);max-width:520px;}
 .concierge-features{display:flex;flex-direction:column;gap:12px;margin-top:24px;}
 .concierge-feat{display:flex;align-items:center;gap:12px;font-size:0.65rem;color:var(--white-2);}
 .concierge-feat::before{content:'';width:16px;height:1px;background:var(--gold);flex-shrink:0;}
@@ -167,7 +167,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 #booking{background:var(--black);}
 .booking-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:100px;align-items:start;}
 .booking-left{position:sticky;top:140px;}
-.booking-note{font-size:0.75rem;line-height:2.1;color:var(--white-3);margin:20px 0 40px;}
+.booking-note{font-size:1rem;line-height:1.7;color:var(--white-2);margin:20px 0 40px;}
 .booking-meta{display:flex;flex-direction:column;gap:20px;padding-top:40px;border-top:1px solid var(--border-soft);}
 .b-meta-row{display:flex;align-items:flex-start;gap:16px;}
 .b-meta-icon{width:36px;height:36px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;color:var(--gold);}
@@ -176,11 +176,11 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 .apply-form{background:var(--black-3);border:1px solid var(--border-soft);padding:56px;}
 .form-head{margin-bottom:40px;padding-bottom:32px;border-bottom:1px solid var(--border-soft);}
 .form-head-title{font-family:'Cormorant',serif;font-size:1.6rem;font-weight:400;margin-bottom:8px;}
-.form-head-sub{font-size:0.62rem;color:var(--white-3);line-height:1.8;}
+.form-head-sub{font-size:0.9rem;color:var(--white-2);line-height:1.7;}
 .frow{margin-bottom:24px;}
 .frow-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .flabel{display:block;font-size:0.48rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:8px;}
-.fi,.fs,.ft{width:100%;background:rgba(255,255,255,0.02);border:1px solid rgba(184,149,63,0.12);color:var(--white);font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:300;padding:13px 16px;outline:none;transition:border-color 0.3s;cursor:none;}
+.fi,.fs,.ft{width:100%;background:rgba(255,255,255,0.02);border:1px solid rgba(184,149,63,0.12);color:var(--white);font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:400;padding:13px 16px;outline:none;transition:border-color 0.3s;cursor:none;}
 .fi::placeholder,.ft::placeholder{color:var(--white-3);}
 .fi:focus,.fs:focus,.ft:focus{border-color:var(--gold);}
 .fs{appearance:none;}
@@ -196,7 +196,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 /* TESTIMONIALS */
 #testimonials{background:var(--black-2);}
 .t-header{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px;}
-.t-intro{font-size:0.75rem;line-height:2;color:var(--white-3);}
+.t-intro{font-size:1rem;line-height:1.7;color:var(--white-2);}
 .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
 .tcard{background:var(--black-3);padding:44px 40px;border:1px solid transparent;transition:border-color 0.4s,transform 0.3s;}
 .tcard:hover{border-color:var(--border);transform:translateY(-4px);}
@@ -228,7 +228,7 @@ nav.scrolled{padding:20px 72px;background:rgba(8,8,8,0.96);border-bottom:1px sol
 #contact{background:var(--black);padding:120px 72px;text-align:center;}
 .contact-inner{max-width:640px;margin:0 auto;}
 .contact-inner .section-label{justify-content:center;}
-.contact-body{font-size:0.75rem;line-height:2.1;color:var(--white-3);margin:24px 0 48px;}
+.contact-body{font-size:1rem;line-height:1.7;color:var(--white-2);margin:24px 0 48px;}
 .contact-email{font-family:'Cormorant',serif;font-size:clamp(1.4rem,2.5vw,2.2rem);font-weight:300;font-style:italic;color:var(--white);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:6px;transition:color 0.3s,border-color 0.3s;display:inline-block;margin-bottom:56px;}
 .contact-email:hover{color:var(--gold);border-color:var(--gold);}
 .socials{display:flex;gap:36px;justify-content:center;}
@@ -304,7 +304,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   .pillar{padding:28px 24px;grid-template-columns:36px 1fr;gap:16px;}
   .pillar-num{font-size:1.4rem;}
   .pillar-name{font-size:0.78rem;}
-  .pillar-desc{font-size:0.7rem;}
+  .pillar-desc{font-size:0.9rem;}
 
   /* About */
   .about-grid{grid-template-columns:1fr;gap:44px;}
@@ -329,7 +329,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   }
   .svc-num{font-size:2rem;margin-bottom:-8px;}
   .svc-name{font-size:0.9rem;}
-  .svc-desc{font-size:0.7rem;}
+  .svc-desc{font-size:0.9rem;}
   .svc-price{
     display:block;
     text-align:left;
@@ -345,7 +345,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   .concierge-right{text-align:left;}
   .concierge-price{font-size:2.5rem;}
   .concierge-title{font-size:1.6rem;}
-  .concierge-desc{font-size:0.7rem;}
+  .concierge-desc{font-size:0.9rem;}
 
   /* Booking */
   .booking-grid{grid-template-columns:1fr;gap:44px;}
@@ -354,7 +354,7 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
   .apply-form{padding:32px 20px;}
   .form-head-title{font-size:1.3rem;}
   .frow-2{grid-template-columns:1fr;gap:16px;}
-  .fi,.fs,.ft{font-size:0.85rem;padding:15px 16px;}
+  .fi,.fs,.ft{font-size:1rem;padding:15px 16px;}
   .fsub{padding:18px;font-size:0.6rem;}
   .b-meta-row{gap:12px;}
 
@@ -413,7 +413,6 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
     <a href="index.html#services">Services</a>
     <a href="index.html#testimonials">Testimonials</a>
     <a href="/blog/">Insights</a>
-    <a href="index.html#location">Location</a>
   </div>
   <a href="index.html#booking" class="nav-apply">Apply to Work Together</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
@@ -750,102 +749,37 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
 <section id="blog" class="section-wrap">
   <div class="blog-head reveal">
     <div><div class="section-label">Insights</div><h2 class="section-title">From the <em>Practice</em></h2></div>
-    <a href="index.html#" class="btn-ghost" style="color:var(--white-3)">All Articles</a>
+    <a href="/blog/" class="btn-ghost" style="color:var(--white-3)">All Articles →</a>
   </div>
   <div class="blog-grid">
-    <div class="bcard featured reveal">
+    <a href="/blog/squash-warm-up-mistakes.html" class="bcard featured reveal" style="text-decoration:none;">
       <div class="bcard-img">⚡</div>
       <div class="bcard-body">
-        <div class="bcard-cat">Performance · Biomechanics</div>
-        <h3 class="bcard-title">Why Most Athletes Are Injured By Capacity Deficits, Not Bad Luck</h3>
-        <div class="bcard-meta">February 2026 · 9 min read</div>
+        <div class="bcard-cat">Biomechanics · Injury Prevention</div>
+        <h3 class="bcard-title">5 Squash Warm-Up Mistakes That Cause Injury</h3>
+        <div class="bcard-meta">February 2026 · 8 min read</div>
       </div>
-    </div>
-    <div class="bcard small reveal d1">
+    </a>
+    <div class="bcard small reveal d1" style="opacity:0.5;pointer-events:none;">
       <div class="bcard-img">🧠</div>
       <div class="bcard-body">
         <div class="bcard-cat">Recovery</div>
         <h3 class="bcard-title">The Mental Side of Healing: Why Your Psychology Slows Your Recovery</h3>
-        <div class="bcard-meta">January 2026 · 6 min read</div>
+        <div class="bcard-meta">Coming Soon</div>
       </div>
     </div>
-    <div class="bcard small reveal d2">
+    <div class="bcard small reveal d2" style="opacity:0.5;pointer-events:none;">
       <div class="bcard-img">🎯</div>
       <div class="bcard-body">
         <div class="bcard-cat">Acupuncture · Squash</div>
         <h3 class="bcard-title">Neurofunctional Acupuncture and the Racquet Sport Athlete</h3>
-        <div class="bcard-meta">January 2026 · 5 min read</div>
+        <div class="bcard-meta">Coming Soon</div>
       </div>
     </div>
   </div>
 </section>
 
 
-
-<!-- LOCATION / FIND ME -->
-<section id="location" class="section-wrap" style="border-top:1px solid var(--border-soft); background:var(--black-2);">
-  <div class="reveal" style="margin-bottom:56px;">
-    <div class="section-label">Visit</div>
-    <h2 class="section-title">Find Me at <em>The Compound Method</em></h2>
-  </div>
-  
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start;">
-    <!-- Map -->
-    <div class="reveal">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.0426862846363!2d-75.32089!3d40.0273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7f3f3f3f3f3%3A0x1f3f3f3f3f3f3f3f!2sThe%20Compound%20Method!5e0!3m2!1sen!2sus!4v1234567890" 
-              width="100%" height="400" style="border:1px solid var(--border); border-radius:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="The Compound Method location map"></iframe>
-    </div>
-    
-    <!-- Info -->
-    <div class="reveal" style="display:flex; flex-direction:column; gap:48px;">
-      <!-- Address Block -->
-      <div>
-        <div style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Address</div>
-        <p style="font-size:1rem; line-height:1.8; color:var(--white); font-family:'Cormorant',serif;">
-          The Compound Method<br>
-          Bryn Mawr, PA<br>
-          <br>
-          <a href="https://maps.google.com/?q=The+Compound+Method+Bryn+Mawr+PA" target="_blank" rel="noopener noreferrer" style="color:var(--gold-light); text-decoration:none; border-bottom:1px solid var(--gold-light); transition:color 0.3s;">Get Directions →</a>
-        </p>
-      </div>
-      
-      <!-- Phone Block -->
-      <div>
-        <div style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Phone</div>
-        <a href="tel:+16105551234" style="font-size:1rem; line-height:1.8; color:var(--white); font-family:'Cormorant',serif; text-decoration:none; transition:color 0.3s;">
-          (610) 555-1234 <span style="color:var(--gold-light);">→</span>
-        </a>
-        <p style="font-size:0.65rem; color:var(--white-3); margin-top:8px; letter-spacing:0.1em;">Click to call (mobile-optimized)</p>
-      </div>
-      
-      <!-- Hours Block -->
-      <div>
-        <div style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Hours</div>
-        <div style="font-size:0.85rem; line-height:2; color:var(--white);">
-          <div><strong style="color:var(--gold-light);">Monday – Friday</strong><br>9:00 AM – 6:00 PM</div>
-          <div style="margin-top:12px;"><strong style="color:var(--gold-light);">Saturday</strong><br>By Appointment Only</div>
-          <div style="margin-top:12px;"><strong style="color:var(--gold-light);">Sunday</strong><br>Closed</div>
-        </div>
-      </div>
-      
-      <!-- CTA -->
-      <div style="margin-top:24px;">
-        <a href="index.html#booking" class="btn-gold" style="display:inline-block;">Schedule Consultation</a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Responsive Adjustment -->
-  <style>
-    @media (max-width:768px) {
-      #location > div {
-        display:grid !important;
-        grid-template-columns:1fr !important;
-        gap:48px !important;
-      }
-    }
-  </style>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -870,7 +804,6 @@ footer{padding:36px 72px;border-top:1px solid var(--border-soft);display:flex;al
     <a href="index.html#method">The Method</a>
     <a href="index.html#services">Services</a>
     <a href="index.html#booking">Apply</a>
-    <a href="index.html#location">Location</a>
     <a href="index.html#contact">Contact</a>
   </div>
 </footer>
